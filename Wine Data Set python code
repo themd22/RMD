@@ -1,0 +1,28 @@
+import pandas as pd
+
+fn = '/Users/madidrees/Documents/Wine List.xlsx'
+
+df = pd.read_excel(fn, sheetname='Wine Ratings', index_col='Wine')
+
+
+print ('----------')
+RegionCost = df['Cost'].groupby(df['Region'])
+print ('Average Cost of Wine Per Region')
+print (' ')
+print (RegionCost.mean())
+print ('----------')
+
+print ('----------')
+RegionOverall = df['Overall'].groupby(df['Region'])
+print ('Average Overall Rating Per Region')
+print (' ')
+print (RegionOverall.mean())
+print ('----------')
+
+print ('----------')
+print ('Difference Between Cost and Rating: The higher the number, the better the deal')
+print (' ')
+df['Spread'] = df['Overall'] - df['Cost']
+Spread = df['Spread'].dropna()
+print (Spread.sort(inplace=False))
+print ('----------')
