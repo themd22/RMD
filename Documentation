@@ -1,0 +1,46 @@
+
+
+Analyzing Wines: Using Programming Analytics
+MIS 407 - Sree Nilakanta
+
+
+November 18, 2015
+
+Madi Drees
+Daniel Rodriguez
+Bryce Marra
+Gentry Rose
+
+
+Our Topic
+    The topic we have chosen for this project is analyzing a data set that focuses on types of wines around the world. We thought this topic was interesting due to each of us having drank the alcoholic beverage in the past. By answering some questions using some programming concepts we learned in class, we will be able to see which wines would be the best to try in the future. If one of us wants to sell wine, this could also be useful as well as to see which ones would be worth having on stock. 
+Our Project Team
+The members of our team are Madi Drees, Daniel Rodriguez, Bryce Marra, and Gentry Rose. We all are majoring in Management Information Systems. 
+Different Open Data Sources
+The different open data sources we explored consisted of Socrata, Google Public Data Explorer, and Quandl. The data source we ended up using was OpenData by Socrata. The data set we used was focused on different wine ratings. The information the data set recorded included the Type, Cost, Variety, Taste, Overall Rating, Store it’s Sold at, and Region. Data Set Link: https://opendata.socrata.com/dataset/The-Reverse-Wine-Snob-Wine-Ratings-ReverseWineSnob/t75p-gtep
+Questions asked based on the available data
+    Some questions we derived from the data set included:
+
+What is the average cost of wine by region?
+What is the average overall rating of wine by region?
+What wine has the best rating:cost ratio by region?
+
+Columns Utilized
+
+    The columns that were helpful in answering the above questions included the following:
+Cost
+Overall Rating
+Region
+
+Outline of Tasks
+Group the ‘Cost’ column by ‘Region’
+Find the mean of this new group to find the average cost of wine by region
+Group the ‘Overall’ column by ‘Region’
+Find the mean of this new group to find the average overall rating of wine by region
+Find the difference between the ‘Overall’ column and the ‘Cost’ column and place it in a new column
+Drop the unavailable values from the new column
+Print the new column while sorting the values without creating a new instance of the data
+
+
+Link to the repository we created: https://github.com/themd22/RMD/tree/master
+
